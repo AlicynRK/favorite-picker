@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="initial-scale=1.0">
-<title>Picker</title>
+<title>Favorite Picker</title>
 <style>
 body {
     background:#FFF;
@@ -210,7 +210,7 @@ button.disabled:hover {
 <body>
 <h1>Picker</h1>
 
-<p>You can include any content you want here.</p>
+<p>Choose your favorite interest! If you can't decide right now, select 'pass' and the next choices will appear. Keep in mind that you will have to choose eventually! Your list of favorites in order will appear under the 'Found Favorites' section. Have fun!</p>
 
 <div id="container">
 
@@ -222,7 +222,7 @@ button.disabled:hover {
 </div>
 
 <div id="secondary">
-<h2>Found favorites</h2>
+<h2>Found Favorites</h2>
 
 <ol id="favorites" class="item-list">
 </ol>
@@ -237,12 +237,20 @@ button.disabled:hover {
 
 var items = [
     // Define your items here
-	{id: "choice1", name: "Choice One"},
-	{id: "choice2", name: "Choice Two"},
+	{id: "coffee", name: "Coffee"},
+	{id: "music", name: "Music"},
 	{id: "choice3", name: "Choice Three"},
-	{id: "choice4", name: "Choice Four"},
-	{id: "choice5", name: "Choice Five"},
-	{id: "choice6", name: "Choice Six"},
+	{id: "christianity", name: "Christianity"},
+	{id: "strawberries", name: "Strawberries"},
+	{id: "makeup", name: "Makeup"},
+	{id: "dresses", name: "Dresses"},
+	{id: "pink-aesthetic", name: "Pink Aesthetic"},
+	{id: "needlework", name: "Needlework Crafts"},
+	{id: "ads-packaging", name: "Coca-Cola packaging/ads"},
+	{id: "teen-fashion", name: "Teen Fashion Magazines"},
+	{id: "my-melody", name: "My Melody"},
+	{id: "singing", name: "Singing"},
+	{id: "cooking", name: "Cooking"},
 ];
 
 var myPicker = new picker.Picker({
